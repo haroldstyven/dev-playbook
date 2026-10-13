@@ -1,0 +1,43 @@
+<!--
+Plantilla de CLAUDE.md / AGENTS.md.
+Llena solo lo que aplique. Borra las secciones que no tengan contenido real —
+una sección vacía es peor que no tenerla.
+-->
+
+# <Nombre del proyecto> — guía para agentes
+
+## Mapa del repo
+
+```
+<estructura de carpetas real, generada con `tree -L 2` o similar>
+```
+
+## Arrancar
+
+```bash
+<comandos copiables y probados>
+```
+
+## Reglas no negociables
+
+1. <Regla> — <por qué: el caso de fallo concreto que la motivó>
+2. <Regla> — <por qué>
+
+## Fallos silenciosos conocidos
+
+- ⚠️ <Qué falla> — <en qué caso específico, y qué hacer en su lugar>
+
+## Convenciones
+
+- Idioma: <ej. todo en español — módulos, funciones, tests, comentarios>
+- Commits: <convención elegida y por qué>
+- <Otras convenciones de nombres/estilo específicas del repo>
+
+## Despliegue
+
+- <Qué rama despliega a qué entorno, y qué dispara el despliegue>
+- ⚠️ <Advertencias de qué puede fallar en silencio durante el deploy>
+
+## Repos relacionados
+
+- <Si este repo tiene una PoC congelada o una versión hermana, cuál es la autoridad>

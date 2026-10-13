@@ -1,0 +1,27 @@
+# <Nombre del proyecto>
+
+<Una o dos frases: qué hace este proyecto y para quién.>
+
+## Arquitectura / Stack
+
+<Lenguaje(s), framework(s), base de datos, servicios externos clave. Un diagrama o lista simple basta — no un ensayo.>
+
+## Requisitos
+
+- <Versión de runtime, ej. Node 20, Python 3.11>
+- <Servicios externos necesarios para correr localmente>
+
+## Arrancar
+
+```bash
+<comandos copiables, probados, en orden>
+```
+
+## Pendientes conocidos
+
+- <Qué falta, qué es deuda técnica a propósito, qué NO está cubierto por tests todavía.>
+
+<!-- Si el proyecto tiene audiencia no técnica además de desarrolladores, considera separar:
+## La historia (para cualquiera, sin saber de código)
+## Para devs (la parte técnica)
+-->

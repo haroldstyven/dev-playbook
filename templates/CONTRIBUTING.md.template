@@ -1,0 +1,31 @@
+# Contribuir a <nombre del proyecto>
+
+## Commits
+
+<Elige una y bórrala la otra:>
+
+**Opción A — Conventional Commits**: `feat(scope): descripción`, `fix:`, `docs:`, `chore(deps):`, `test:`, `build:`.
+
+**Opción B — Convención propia**: `Área: efecto observable del cambio`. Usamos esto en vez de Conventional Commits porque <razón concreta>.
+
+En ambos casos: sin trailer de co-autoría de IA en los commits.
+
+## Ramas
+
+Prefijo semántico: `feat/`, `fix/`, `chore/`, `docs/`, `refactor/` + nombre corto y descriptivo.
+
+## `main` siempre desplegable
+
+Si un merge rompe `main`, la respuesta es revertir el merge — no parchear encima.
+
+## Antes de abrir un PR
+
+- [ ] `.env.example` actualizado si agregaste variables de entorno.
+- [ ] Migraciones de BD idempotentes.
+- [ ] Sin secretos en el diff.
+- [ ] Tests y lint pasan localmente.
+- [ ] Si el cambio toca aislamiento entre tenants/clientes, está explícitamente verificado.
+
+## Revisión
+
+Primera pregunta de cualquier review: <específico al dominio — ej. "¿este cambio podría filtrar datos de un tenant a otro?">.

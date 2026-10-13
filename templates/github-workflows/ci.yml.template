@@ -1,0 +1,31 @@
+# Copia este archivo a .github/workflows/ci.yml y ajusta el setup del lenguaje.
+name: CI
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Elige el setup de tu lenguaje y borra los demás:
+      # - uses: actions/setup-python@v5
+      #   with:
+      #     python-version: "3.11"
+      # - uses: actions/setup-node@v4
+      #   with:
+      #     node-version: "20"
+      # - uses: actions/setup-go@v5
+      #   with:
+      #     go-version: "1.22"
+
+      - run: echo "instalar dependencias aquí"
+      - run: echo "correr tests aquí"
+
+  branch-cleanup:
+    if: github.event_name == 'pull_request' && github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Borrar rama mergeada
+        run: git push origin --delete "${{ github.event.pull_request.head.ref }}" || true

@@ -13,6 +13,8 @@ Para no reinventar las mismas decisiones en cada proyecto nuevo, y para tener al
 - Si vas a **empezar un proyecto nuevo**: copia las plantillas de [`templates/`](templates/) y ajusta lo que no aplique.
 - Si vas a **contribuir a uno de mis repos**: lee [`docs/01-git-y-control-de-versiones.md`](docs/01-git-y-control-de-versiones.md) primero.
 - Si vas a **trabajar con Claude Code / IA** sobre uno de estos proyectos: lee [`docs/03-trabajo-con-ia-claude-code.md`](docs/03-trabajo-con-ia-claude-code.md).
+- Si vas a **desarrollar una app iOS/Android**: lee [`docs/06-dev-mobile.md`](docs/06-dev-mobile.md).
+- Si vas a **construir un sistema de agentes de IA en producción**: lee [`docs/07-plataformas-de-agentes-ia.md`](docs/07-plataformas-de-agentes-ia.md).
 - Si quieres el **checklist de "listo para mergear"**: ve a [`checklist-definition-of-done.md`](checklist-definition-of-done.md).
 
 ## Índice
@@ -24,6 +26,8 @@ Para no reinventar las mismas decisiones en cada proyecto nuevo, y para tener al
 | [`docs/03-trabajo-con-ia-claude-code.md`](docs/03-trabajo-con-ia-claude-code.md) | Qué va en un `CLAUDE.md`, skills como dependencias versionadas, planificar antes de implementar |
 | [`docs/04-ci-cd-y-automatizacion.md`](docs/04-ci-cd-y-automatizacion.md) | CI mínimo viable, secret scanning, automatización de higiene de repo |
 | [`docs/05-calidad-seguridad-y-dependencias.md`](docs/05-calidad-seguridad-y-dependencias.md) | Linters por lenguaje, manejo de secretos, pin de versiones |
+| [`docs/06-dev-mobile.md`](docs/06-dev-mobile.md) | iOS/Android: XcodeGen como fuente de verdad, secretos locales, firma/provisioning |
+| [`docs/07-plataformas-de-agentes-ia.md`](docs/07-plataformas-de-agentes-ia.md) | Grafos/colas separados por responsabilidad, infraestructura mínima, observabilidad, modos de fallo propios de agentes |
 | [`checklist-definition-of-done.md`](checklist-definition-of-done.md) | Lista de verificación antes de abrir/mergear un PR |
 | [`templates/`](templates/) | Plantillas copiables: `README.md`, `CLAUDE.md`, `CONTRIBUTING.md`, `.env.example` |
 
